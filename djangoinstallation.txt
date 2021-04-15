@@ -1,0 +1,250 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\kasia> ls
+
+
+    Directory: C:\Users\kasia
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        01/06/2020     19:11                .config
+d-----        05/03/2020     10:48                .dnx
+d-----        30/12/2020     17:01                .dotnet
+d-----        17/02/2021     19:11                .librarymanager
+d-----        01/06/2020     17:32                .nuget
+d-----        22/12/2020     20:03                .templateengine
+d-----        08/07/2020     19:48                .vscode
+d-r---        21/02/2021     02:46                3D Objects
+d-----        29/09/2020     20:14                Apple
+d-r---        21/02/2021     02:46                Contacts
+d-r---        13/04/2021     18:54                Desktop
+d-r---        21/02/2021     02:46                Documents
+d-r---        13/04/2021     18:42                Downloads
+d-r---        21/02/2021     02:46                Favorites
+d-r---        21/02/2021     02:46                Links
+d-r---        21/02/2021     02:46                Music
+dar--l        13/04/2021     12:42                OneDrive
+d-r---        21/02/2021     02:46                Pictures
+d-r---        21/02/2021     02:46                Saved Games
+d-r---        21/02/2021     02:46                Searches
+d-----        05/03/2020     20:28                source
+d-r---        21/02/2021     02:46                Videos
+-a----        22/12/2020     19:13             57 .angular-config.json
+-a----        13/04/2021     15:06          10280 .bash_history
+-a----        01/06/2020     20:05             60 .gitconfig
+-a----        27/10/2020     13:37             56 .minttyrc
+-a----        28/10/2020     20:42            915 .viminfo
+-a----        12/04/2021     19:16        8388608 EssentialApp.mdf
+-a----        12/04/2021     19:16        8388608 EssentialApp_log.ldf
+-a----        29/03/2021     19:32         168963 logoadastra.png
+-a----        28/09/2020     21:28        3211264 SuperStore.mdf
+-a----        28/09/2020     21:28        1376256 SuperStore_log.ldf
+
+
+PS C:\Users\kasia> cd Desktop
+PS C:\Users\kasia\Desktop> cd .\project_demo\
+PS C:\Users\kasia\Desktop\project_demo> pip install pipenv
+Collecting pipenv
+  Downloading pipenv-2020.11.15-py2.py3-none-any.whl (3.9 MB)
+     |████████████████████████████████| 3.9 MB 284 kB/s
+Requirement already satisfied: pip>=18.0 in c:\users\kasia\appdata\local\programs\python\python39\lib\site-packages (from pipenv) (20.2.3)
+Requirement already satisfied: setuptools>=36.2.1 in c:\users\kasia\appdata\local\programs\python\python39\lib\site-packages (from pipenv) (49.2.1)
+Collecting certifi
+  Downloading certifi-2020.12.5-py2.py3-none-any.whl (147 kB)
+     |████████████████████████████████| 147 kB 726 kB/s
+Collecting virtualenv
+  Downloading virtualenv-20.4.3-py2.py3-none-any.whl (7.2 MB)
+     |████████████████████████████████| 7.2 MB 656 kB/s
+Collecting virtualenv-clone>=0.2.5
+  Downloading virtualenv_clone-0.5.4-py2.py3-none-any.whl (6.6 kB)
+Collecting filelock<4,>=3.0.0
+  Downloading filelock-3.0.12-py3-none-any.whl (7.6 kB)
+Collecting appdirs<2,>=1.4.3
+  Downloading appdirs-1.4.4-py2.py3-none-any.whl (9.6 kB)
+Collecting distlib<1,>=0.3.1
+  Downloading distlib-0.3.1-py2.py3-none-any.whl (335 kB)
+     |████████████████████████████████| 335 kB 595 kB/s
+Collecting six<2,>=1.9.0
+  Downloading six-1.15.0-py2.py3-none-any.whl (10 kB)
+Installing collected packages: certifi, filelock, appdirs, distlib, six, virtualenv, virtualenv-clone, pipenv
+Successfully installed appdirs-1.4.4 certifi-2020.12.5 distlib-0.3.1 filelock-3.0.12 pipenv-2020.11.15 six-1.15.0 virtualenv-20.4.3 virtualenv-clone-0.5.4
+WARNING: You are using pip version 20.2.3; however, version 21.0.1 is available.
+You should consider upgrading via the 'c:\users\kasia\appdata\local\programs\python\python39\python.exe -m pip install --upgrade pip' command.
+PS C:\Users\kasia\Desktop\project_demo> ii.
+ii. : The term 'ii.' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path
+is correct and try again.
+At line:1 char:1
++ ii.
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (ii.:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\kasia\Desktop\project_demo> ii .
+PS C:\Users\kasia\Desktop\project_demo> pix install virtualenv
+pix : The term 'pix' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path
+is correct and try again.
+At line:1 char:1
++ pix install virtualenv
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (pix:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\kasia\Desktop\project_demo> pip install virtualenv
+Requirement already satisfied: virtualenv in c:\users\kasia\appdata\local\programs\python\python39\lib\site-packages (20.4.3)
+Requirement already satisfied: distlib<1,>=0.3.1 in c:\users\kasia\appdata\local\programs\python\python39\lib\site-packages (from virtualenv) (0.3.1)
+Requirement already satisfied: filelock<4,>=3.0.0 in c:\users\kasia\appdata\local\programs\python\python39\lib\site-packages (from virtualenv) (3.0.12)
+Requirement already satisfied: appdirs<2,>=1.4.3 in c:\users\kasia\appdata\local\programs\python\python39\lib\site-packages (from virtualenv) (1.4.4)
+Requirement already satisfied: six<2,>=1.9.0 in c:\users\kasia\appdata\local\programs\python\python39\lib\site-packages (from virtualenv) (1.15.0)
+WARNING: You are using pip version 20.2.3; however, version 21.0.1 is available.
+You should consider upgrading via the 'c:\users\kasia\appdata\local\programs\python\python39\python.exe -m pip install --upgrade pip' command.
+PS C:\Users\kasia\Desktop\project_demo> ls
+PS C:\Users\kasia\Desktop\project_demo> virtualenv env
+created virtual environment CPython3.9.4.final.0-64 in 6187ms
+  creator CPython3Windows(dest=C:\Users\kasia\Desktop\project_demo\env, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\kasia\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==21.0.1, setuptools==54.1.2, wheel==0.36.2
+  activators BashActivator,BatchActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
+PS C:\Users\kasia\Desktop\project_demo> ls
+
+
+    Directory: C:\Users\kasia\Desktop\project_demo
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        13/04/2021     19:01                env
+
+
+PS C:\Users\kasia\Desktop\project_demo> env\Scripts\activate
+(env) PS C:\Users\kasia\Desktop\project_demo> pip install django
+Collecting django
+  Downloading Django-3.2-py3-none-any.whl (7.9 MB)
+     |████████████████████████████████| 7.9 MB 437 kB/s
+Collecting sqlparse>=0.2.2
+  Downloading sqlparse-0.4.1-py3-none-any.whl (42 kB)
+     |████████████████████████████████| 42 kB 303 kB/s
+Collecting asgiref<4,>=3.3.2
+  Downloading asgiref-3.3.4-py3-none-any.whl (22 kB)
+Collecting pytz
+  Downloading pytz-2021.1-py2.py3-none-any.whl (510 kB)
+     |████████████████████████████████| 510 kB 298 kB/s
+Installing collected packages: sqlparse, pytz, asgiref, django
+Successfully installed asgiref-3.3.4 django-3.2 pytz-2021.1 sqlparse-0.4.1
+(env) PS C:\Users\kasia\Desktop\project_demo> django-admin startproject firstdj
+(env) PS C:\Users\kasia\Desktop\project_demo> ls
+
+
+    Directory: C:\Users\kasia\Desktop\project_demo
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        13/04/2021     19:01                env
+d-----        13/04/2021     19:07                firstdj
+
+
+(env) PS C:\Users\kasia\Desktop\project_demo> ls
+
+
+    Directory: C:\Users\kasia\Desktop\project_demo
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        13/04/2021     19:01                env
+d-----        13/04/2021     19:07                src
+
+
+(env) PS C:\Users\kasia\Desktop\project_demo> cd src
+(env) PS C:\Users\kasia\Desktop\project_demo\src> ls
+
+
+    Directory: C:\Users\kasia\Desktop\project_demo\src
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        13/04/2021     19:07                firstdj
+-a----        13/04/2021     19:07            685 manage.py
+
+
+(env) PS C:\Users\kasia\Desktop\project_demo\src> ls
+
+
+    Directory: C:\Users\kasia\Desktop\project_demo\src
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        13/04/2021     19:07                firstdj
+-a----        13/04/2021     19:07            685 manage.py
+
+
+(env) PS C:\Users\kasia\Desktop\project_demo\src> python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying sessions.0001_initial... OK
+(env) PS C:\Users\kasia\Desktop\project_demo\src> python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 13, 2021 - 19:32:27
+Django version 3.2, using settings 'firstdj.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[13/Apr/2021 19:32:37] "GET / HTTP/1.1" 200 10697
+[13/Apr/2021 19:32:38] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[13/Apr/2021 19:32:38] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[13/Apr/2021 19:32:38] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[13/Apr/2021 19:32:38] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+Not Found: /favicon.ico
+[13/Apr/2021 19:32:38] "GET /favicon.ico HTTP/1.1" 404 1996
+(env) PS C:\Users\kasia\Desktop\project_demo\src> python manage.py startapp posts
+(env) PS C:\Users\kasia\Desktop\project_demo\src> ls
+
+
+    Directory: C:\Users\kasia\Desktop\project_demo\src
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        13/04/2021     19:19                firstdj
+d-----        13/04/2021     20:06                posts
+-a----        13/04/2021     19:19         131072 db.sqlite3
+-a----        13/04/2021     19:07            685 manage.py
+
+everytime we add/update models run
+
+(env) PS C:\Users\kasia\Desktop\project_demo\src> python manage.py makemigration
+(env) PS C:\Users\kasia\Desktop\project_demo\src> python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, posts, sessions
+Running migrations:
+  Applying posts.0001_initial... OK
+(env) PS C:\Users\kasia\Desktop\project_demo\src>
+
+RESTART APP
+PS C:\Users\kasia\Desktop\project_demo> env\Scripts\activate

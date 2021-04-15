@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>This is our list of posts</h1>
+	<!-- <QuerySet [<Post: this is first post title>]> -->
+	{% for post in post_objects %}
+		<p>{{ post }}</p>
+	{% endfor %}
+</body>
+</html>
